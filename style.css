@@ -75,7 +75,21 @@ p {
     border: none;
     background-color: #da6b32;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 10px 50px;
     border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.has-account p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.has-account a {
+    text-decoration: none;
+    color: #da6b32;
+    font-weight: 700;
 }
