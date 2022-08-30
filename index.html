@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
 </head>
@@ -16,7 +16,53 @@
             <img src="images/leaves-background.avif">
         </div>
         <div class="content">
-            
+            <div class="service-description">
+                <p class="first-text">This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started. </p>
+                <p class="second-text">You <em>know</em> you want to.</p>
+            </div>
+            <div class="fieldset">
+                <p>Let's do this!</p>
+            </div>
+            <div class="form">
+                <form action="#" method="get">
+                    <div class="form-wrap">
+                        <div class="form-element">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="user_mail">Email</label>
+                            <input type="email" id="user_mail" name="user_mail" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="user_phone">Phone number</label>
+                            <input type="tel" id="user_phone" name="user_phone" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="user_passwd">Password</label>
+                            <input type="text" id="user_passwd" name="user_passwd" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="user_confpasswd">Confirm Password</label>
+                            <input type="text" id="user_confpasswd" name="user_confpasswd" required>
+                        </div>
+                    </div>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
         </div>
     </div>
 </body>

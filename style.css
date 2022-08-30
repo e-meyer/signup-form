@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sidebar-images img {
+    height: 100vh;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrap {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
