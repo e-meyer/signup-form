@@ -76,7 +76,7 @@ p, label {
 
 .form-row {
     display: flex;
-    gap: 20px;
+    gap: 100px;
 }
 
 .form-element {
@@ -98,13 +98,52 @@ p, label {
     font-size: 1.2rem;
 }
 
+.submit-button {
+    display: flex; 
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.submit-button p {
+    font-size: 1.2rem;
+}
+
+.submit-button a {
+    text-decoration: none;
+    color: #E42F2A;
+}
+
 button {
     font-size: 1.3rem;
     font-weight: bold;
     color: #FFF;
     background-color: #b01926c9;
-    padding: 15px 60px;
+    padding: 20px 72px;
     border-radius: 10px;
     border: none;
 }
+
+@media screen and (max-width: 1310px) {
+    .content {
+        margin-left: 30px;
+        gap: 0px;
+    }
+
+    .form-wrap {
+        margin-left: -30px;
+        padding-left: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    input {
+        padding: 15px 10px;
+    }
+}
+
+
 
