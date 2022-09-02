@@ -38,6 +38,31 @@ p, label {
     gap: 30px;
 }
 
+.form-wrap {
+    margin-left: -60px;
+    background-color: #282828;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element input {
+    outline: none;
+    margin-bottom: 15px;
+    appearance: none;
+    border: none;
+    background-color: #343434;
+    padding: 15px 60px;
+    border-radius: 10px;
+}
+
 button {
     font-size: 1.3rem;
     font-weight: bold;
@@ -47,3 +72,4 @@ button {
     border-radius: 10px;
     border: none;
 }
+
