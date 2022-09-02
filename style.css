@@ -14,7 +14,11 @@ body {
 }
 
 p {
-    
+    font-size: 2rem
+}
+
+p, label {
+    color: #FFF;
 }
  
 .container {
@@ -26,4 +30,11 @@ p {
 
 .sidebar-images {
     display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 60px;
 }
