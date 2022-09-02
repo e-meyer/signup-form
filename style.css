@@ -24,23 +24,54 @@ p, label {
 .container {
     display: flex;
     height: 90vh;
-    width: 90vw;
+    width: 95vw;
     background-color: #343434;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.sidebar-images, .content{
+.sidebar-images, .content, .logo img {
     display: flex;
+}
+
+.sidebar-images img, .container {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .content {
     flex-direction: column;
+    justify-content: center;
     margin-left: 60px;
     gap: 30px;
 }
 
+.logo img {
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 78%;
+}
+
+.service-description span {
+    font-weight: bold;
+    color: #E42F2A;
+}
+
+.fieldset p {
+    font-size: 1.8rem;
+}
+
 .form-wrap {
+    padding: 15px 0px 15px 60px;
     margin-left: -60px;
     background-color: #282828;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-row {
@@ -61,6 +92,10 @@ p, label {
     background-color: #343434;
     padding: 15px 60px;
     border-radius: 10px;
+}
+
+.form-element label {
+    font-size: 1.2rem;
 }
 
 button {
