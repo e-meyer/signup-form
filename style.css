@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-size: 2rem
+    font-size: 2.2rem
 }
 
 p, label {
@@ -55,7 +55,7 @@ p, label {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 78%;
+    max-width: 85%;
 }
 
 .service-description span {
@@ -64,7 +64,7 @@ p, label {
 }
 
 .fieldset p {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -85,6 +85,10 @@ p, label {
     flex-direction: column;
 }
 
+.form-element label {
+    font-size: 1.6rem;
+}
+
 .form-element input {
     outline: none;
     margin-bottom: 15px;
@@ -92,31 +96,26 @@ p, label {
     border: none;
     background-color: #343434;
     width: 330px;
-    padding: 8px 15px 8px 15px;
+    padding: 10px 25px 10px 25px;
     box-sizing: border-box;
     border-radius: 10px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .form-element input::placeholder {
     color: #282828bc;
-    font-size: 1.4rem;
-}
-
-.form-element label {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .submit-button {
     display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 30px;
     gap: 20px;
 }
 
 .submit-button p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .submit-button a {
@@ -126,12 +125,13 @@ p, label {
 }
 
 button {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #FFF;
     background-color: #b01926c9;
-    padding: 20px 60px;
-    border-radius: 10px;
+    padding: 20px 0px;
+    width: 330px;
+    border-radius: 15px;
     border: none;
 }
 
