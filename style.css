@@ -92,9 +92,15 @@ p, label {
     border: none;
     background-color: #343434;
     width: 330px;
-    padding: 15px;
+    padding: 8px 15px 8px 15px;
     box-sizing: border-box;
     border-radius: 10px;
+    font-size: 1.4rem;
+}
+
+.form-element input::placeholder {
+    color: #282828bc;
+    font-size: 1.4rem;
 }
 
 .form-element label {
