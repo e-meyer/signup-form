@@ -123,6 +123,11 @@ p, label {
     text-decoration: none;
     color: #E42F2A;
     font-weight: bold;
+    transition: 0.4s;
+}
+
+.submit-button a:hover {
+    color: #FFF;
 }
 
 button {
@@ -135,9 +140,18 @@ button {
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    transition: 0.4s;
 }
 
+button:hover{
+    color: #b01926c9;
+    background-color: #FFF;
+}
 
+button:active{
+    color: #b01926c9;
+    background-color: #FFF;
+}
 
 input[type="text"]:not(:focus):not(:placeholder-shown):invalid,
 input[type="email"]:not(:focus):not(:placeholder-shown):invalid,
