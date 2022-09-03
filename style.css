@@ -30,6 +30,10 @@ p, label {
     border-bottom-right-radius: 20px;
 }
 
+#red-leaves {
+    display: flex;
+}
+
 .sidebar-images {
     position: relative;
 }
@@ -46,7 +50,7 @@ p, label {
 .logo img {
     position: absolute;
     text-align: center;
-    min-width: 400px;
+    min-width: 300px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -163,26 +167,80 @@ input[type="tel"]:not(:focus):not(:placeholder-shown):invalid {
     outline: 2px solid #b01926c9;
 }
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1420px) {
     .content {
-        margin-left: 30px;
-        gap: 0px;
-    }
-
-    .form-wrap {
-        margin-left: -30px;
-        padding-left: 30px;
+        margin-left: 40px;
+        gap: 25px;
     }
 
     .form-row {
-        flex-direction: column;
-        gap: 0px;
+        gap: 70px;
     }
 
-    input {
-        padding: 15px 10px;
+    .form-element input {
+        padding: 10px 15px 10px 15px;
+        font-size: 1.4rem;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    .form-element input::placeholder {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        width: 300px;
+    }
+
+    .submit-button p {
+        font-size: 1.4rem;
     }
 }
 
+@media screen and (max-width: 1320px) {
+    .form-row {
+        gap: 50px;
+    }
+
+    .form-element input {
+        width: 270px;
+    }
+
+    button {
+        width: 270px;
+        font-size: 1.3rem;
+    }
+
+    .submit-button p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    p {
+        font-size: 2rem;
+    }
+
+    .content {
+        gap: 15px;
+    }
+    
+    .form-row {
+        gap: 25px;
+    }
+
+    .form-element input {
+        width: 250px;
+    }
+
+    .submit-button {
+        margin-top: 15px;
+    }
+
+    button {
+        width: 250px;
+    }
+}
 
 
