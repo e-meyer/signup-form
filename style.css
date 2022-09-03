@@ -30,6 +30,25 @@ p, label {
     border-bottom-right-radius: 20px;
 }
 
+.sidebar-images {
+    position: relative;
+}
+
+.sidebar-images p {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba( 0, 0, 255,1);
+}
+
+.sidebar-images a {
+    text-decoration: none;
+    color: #E42F2A;
+    font-weight: bold;
+}
+
 .sidebar-images, .content, .logo img {
     display: flex;
 }
