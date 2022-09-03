@@ -43,16 +43,21 @@ p, label {
     border-bottom-left-radius: 20px;
 }
 
+.logo img {
+    position: absolute;
+    text-align: center;
+    min-width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
 .content {
     flex-direction: column;
     justify-content: center;
     margin-left: 60px;
     gap: 30px;
-}
-
-.logo img {
-    max-width: 400px;
-    min-width: 200px;
 }
 
 .service-description {
