@@ -72,7 +72,6 @@ p, label {
     padding: 15px 0px 15px 60px;
     margin-left: -60px;
     background-color: #282828;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-row {
@@ -89,6 +88,12 @@ p, label {
     font-size: 1.6rem;
 }
 
+.form-element input,
+.form-element input::placeholder,
+.submit-button p {
+    font-size: 1.5rem;
+}
+
 .form-element input {
     outline: none;
     margin-bottom: 15px;
@@ -99,13 +104,11 @@ p, label {
     padding: 10px 15px 10px 15px;
     box-sizing: border-box;
     border-radius: 10px;
-    font-size: 1.5rem;
     color: #FFF;
 }
 
 .form-element input::placeholder {
     color: #282828bc;
-    font-size: 1.5rem;
 }
 
 .submit-button {
@@ -113,10 +116,6 @@ p, label {
     align-items: center;
     margin-top: 30px;
     gap: 20px;
-}
-
-.submit-button p {
-    font-size: 1.5rem;
 }
 
 .submit-button a {
@@ -143,12 +142,8 @@ button {
     transition: 0.4s;
 }
 
-button:hover{
-    color: #b01926c9;
-    background-color: #FFF;
-}
-
-button:active{
+button:hover, 
+button:active {
     color: #b01926c9;
     background-color: #FFF;
 }
