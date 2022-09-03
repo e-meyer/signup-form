@@ -136,6 +136,10 @@ button {
     border: none;
 }
 
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid #b01926c9;
+}
+
 @media screen and (max-width: 1310px) {
     .content {
         margin-left: 30px;

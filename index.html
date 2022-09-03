@@ -39,12 +39,12 @@
                             <div class="form-row">
                                 <div class="form-element">
                                     <label for="first_name">First name</label>
-                                    <input type="text" id="first_name" name="first_name" placeholder="Bob" required>
+                                    <input type="text" id="first_name" name="first_name" placeholder="Bob" pattern="^[a-zA-Z ]*$" required>
                                 </div>
 
                                 <div class="form-element">
                                     <label for="last_name">Last name</label>
-                                    <input type="text" id="last_name" name="last_name" placeholder="Meyer" required>
+                                    <input type="text" id="last_name" name="last_name" pattern="^[a-zA-Z ]*$" placeholder="Meyer" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -61,12 +61,12 @@
                             <div class="form-row">
                                 <div class="form-element">
                                     <label for="user_passwd">Password</label>
-                                    <input type="password" id="user_passwd" name="user_passwd" required>
+                                    <input type="password" id="user_passwd" name="user_passwd" minlength="8" required>
                                 </div>
 
                                 <div class="form-element">
                                     <label for="user_confpasswd">Confirm password</label>
-                                    <input type="password" id="user_confpasswd" name="user_confpasswd" required>
+                                    <input type="password" id="user_confpasswd" name="user_confpasswd" minlength="8" required>
                                 </div>
                             </div>
                         </div>
