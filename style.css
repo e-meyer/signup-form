@@ -30,15 +30,7 @@ p, label {
     border-bottom-right-radius: 20px;
 }
 
-#red-leaves {
-    display: flex;
-}
-
-.sidebar-images {
-    position: relative;
-}
-
-.sidebar-images, .content, .logo img {
+.sidebar-images, .content {
     display: flex;
 }
 
@@ -47,17 +39,32 @@ p, label {
     border-bottom-left-radius: 20px;
 }
 
-.logo img {
+.sidebar-images {
+    background-image: url("images/red-leaves.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-images {
+    position: relative;
+}
+
+.logo  {
     position: absolute;
-    text-align: center;
-    min-width: 300px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    
+
+}
+
+.sidebar-images img {
+    width: 300px;
 }
 
 .content {
+    width: 70vw;
     flex-direction: column;
     justify-content: center;
     margin-left: 60px;
@@ -82,19 +89,19 @@ p, label {
 }
 
 .form-wrap {
+    display: flex;
+    flex-flow: row wrap;
     padding: 15px 0px 15px 60px;
     margin-left: -60px;
     background-color: #282828;
-}
-
-.form-row {
-    display: flex;
-    gap: 100px;
+    gap: 10px 150px;
 }
 
 .form-element {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    width: 35%;
+    gap: 5px;
 }
 
 .form-element label {
@@ -107,13 +114,16 @@ p, label {
     font-size: 1.5rem;
 }
 
+.sidebar-images {
+    border-radius: 15px 0px 0px 15px;
+}
+
 .form-element input {
     outline: none;
     margin-bottom: 15px;
     appearance: none;
     border: none;
     background-color: #343434;
-    width: 330px;
     padding: 10px 15px 10px 15px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -127,7 +137,6 @@ p, label {
 .submit-button {
     display: flex; 
     align-items: center;
-    margin-top: 30px;
     gap: 20px;
 }
 
@@ -166,81 +175,3 @@ input[type="email"]:not(:focus):not(:placeholder-shown):invalid,
 input[type="tel"]:not(:focus):not(:placeholder-shown):invalid {
     outline: 2px solid #b01926c9;
 }
-
-@media screen and (max-width: 1420px) {
-    .content {
-        margin-left: 40px;
-        gap: 25px;
-    }
-
-    .form-row {
-        gap: 70px;
-    }
-
-    .form-element input {
-        padding: 10px 15px 10px 15px;
-        font-size: 1.4rem;
-        width: 300px;
-        border-radius: 5px;
-    }
-
-    .form-element input::placeholder {
-        font-size: 1.4rem;
-    }
-
-    button {
-        font-size: 1.5rem;
-        width: 300px;
-    }
-
-    .submit-button p {
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width: 1320px) {
-    .form-row {
-        gap: 50px;
-    }
-
-    .form-element input {
-        width: 270px;
-    }
-
-    button {
-        width: 270px;
-        font-size: 1.3rem;
-    }
-
-    .submit-button p {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 1220px) {
-    p {
-        font-size: 2rem;
-    }
-
-    .content {
-        gap: 15px;
-    }
-    
-    .form-row {
-        gap: 25px;
-    }
-
-    .form-element input {
-        width: 250px;
-    }
-
-    .submit-button {
-        margin-top: 15px;
-    }
-
-    button {
-        width: 250px;
-    }
-}
-
-
