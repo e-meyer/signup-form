@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -91,6 +91,7 @@ label {
 }
 
 .form-wrap {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     padding: 15px 0px 15px 60px;
@@ -135,7 +136,7 @@ label {
 .form-element input::placeholder {
     color: #282828bc;
 }
-/* asdasdasd */
+
 .submit-button {
     margin-top: 30px;
     display: flex;
@@ -177,4 +178,209 @@ input[type='text']:not(:focus):not(:placeholder-shown):invalid,
 input[type='email']:not(:focus):not(:placeholder-shown):invalid,
 input[type='tel']:not(:focus):not(:placeholder-shown):invalid {
     outline: 2px solid #b01926c9;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+p,
+label {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    width: 95vw;
+    background-color: #343434;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidebar-images,
+.content {
+    display: flex;
+}
+
+.sidebar-images,
+.container {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar-images {
+    background-image: url('images/red-leaves.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-images {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+}
+
+.sidebar-images img {
+    width: 300px;
+}
+
+.content {
+    width: 70vw;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    gap: 30px;
+}
+
+.logo img {
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 85%;
+}
+
+.service-description span {
+    font-weight: bold;
+    color: #e42f2a;
+}
+
+.fieldset p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-wrap {
+    padding: 15px 0px 15px 60px;
+    margin-left: -60px;
+    background-color: #282828;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.form-row {
+    display: flex;
+    gap: 100px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-element label {
+    font-size: 1.6rem;
+}
+
+.form-element input {
+    outline: none;
+    margin-bottom: 15px;
+    appearance: none;
+    border: none;
+    background-color: #343434;
+    width: 330px;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.form-element input::placeholder {
+    color: #282828bc;
+    font-size: 1.5rem;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.submit-button p {
+    font-size: 1.5rem;
+}
+
+.submit-button a {
+    text-decoration: none;
+    color: #e42f2a;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.submit-button a:hover {
+    color: #fff;
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b01926c9;
+    padding: 20px 0px;
+    width: 330px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover,
+button:active {
+    color: #b01926c9;
+    background-color: #fff;
+}
+
+input[type='text']:not(:focus):not(:placeholder-shown):invalid,
+input[type='email']:not(:focus):not(:placeholder-shown):invalid,
+input[type='tel']:not(:focus):not(:placeholder-shown):invalid {
+    outline: 2px solid #b01926c9;
+}
+
+@media screen and (max-width: 1310px) {
+    .content {
+        margin-left: 30px;
+        gap: 0px;
+    }
+
+    .form-wrap {
+        margin-left: -30px;
+        padding-left: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    input {
+        padding: 15px 10px;
+    }
 }
